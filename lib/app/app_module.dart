@@ -1,3 +1,5 @@
+import 'package:app_kapets/app/modules/splash_screen/splash_screen_module.dart';
+
 import 'app_bloc.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +14,8 @@ class AppModule extends MainModule {
 
   @override
   List<ModularRouter> get routers => [
-        ModularRouter(Modular.initialRoute, module: HomeModule()),
+        ModularRouter(Modular.initialRoute, module: SplashScreenModule()),
+        ModularRouter('/home', module: HomeModule()),
       ];
 
   @override
