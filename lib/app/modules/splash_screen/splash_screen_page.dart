@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashScreenPage extends StatefulWidget {
   @override
@@ -11,11 +12,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
     return Scaffold(
       body: Column(
         children: <Widget>[
-          Stack(
-            children: [
-              Image.asset('assets/gifs/splash_screen.gif'),
-            ],
-          )
+          Lottie.asset('assets/lottie/splash_screen_dog.json'),
         ],
       ),
     );
