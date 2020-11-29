@@ -17,15 +17,22 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Align(
-              child: Text(
-                'Kapets',
-                style: TextStyle(
-                  color: CustomColors.rajah,
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 12,
-                ),
+            Text(
+              'Kapets',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: CustomColors.rajah,
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 12,
+              ),
+            ),
+            Text(
+              'faça um novo amigo',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: CustomColors.rajah.withOpacity(.5),
+                fontSize: 16,
               ),
             ),
             SizedBox(height: 40),
