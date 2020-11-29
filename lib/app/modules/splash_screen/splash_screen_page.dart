@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:app_kapets/app/routes/routes.dart';
-import 'package:app_kapets/utils/CustomColors.dart';
+import 'package:app_kapets/utils/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
