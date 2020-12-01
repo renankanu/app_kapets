@@ -13,6 +13,7 @@ class _HomePageState extends State<HomePage> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -32,6 +33,22 @@ class _HomePageState extends State<HomePage> {
                     ),
                   )
                 ],
+              ),
+              Text(
+                'Busque um pet',
+                style: TextStyle(fontSize: 24),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: const BorderRadius.all(
+                        const Radius.circular(30.0),
+                      ),
+                    ),
+                    filled: true,
+                    hintStyle: TextStyle(color: Colors.grey[800]),
+                    hintText: "Procurar",
+                    fillColor: Colors.white70),
               )
             ],
           ),
