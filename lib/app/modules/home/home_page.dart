@@ -40,12 +40,12 @@ class _HomePageState extends State<HomePage> {
               ),
               TextField(
                 decoration: InputDecoration(
+                    contentPadding: EdgeInsets.all(0),
                     border: OutlineInputBorder(
                       borderRadius: const BorderRadius.all(
                         const Radius.circular(30.0),
                       ),
                     ),
-                    filled: true,
                     hintStyle: TextStyle(color: Colors.grey[800]),
                     hintText: "Procurar",
                     fillColor: Colors.white70),
