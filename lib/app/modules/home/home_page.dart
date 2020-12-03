@@ -1,3 +1,4 @@
+import 'package:app_kapets/utils/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -40,15 +41,17 @@ class _HomePageState extends State<HomePage> {
               ),
               TextField(
                 decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(0),
+                    contentPadding: EdgeInsets.symmetric(horizontal: 12),
                     border: OutlineInputBorder(
                       borderRadius: const BorderRadius.all(
                         const Radius.circular(30.0),
                       ),
+                      borderSide: BorderSide.none,
                     ),
                     hintStyle: TextStyle(color: Colors.grey[800]),
                     hintText: "Procurar",
-                    fillColor: Colors.white70),
+                    filled: true,
+                    fillColor: CustomColors.wildSand),
               )
             ],
           ),
