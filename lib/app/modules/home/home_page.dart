@@ -41,6 +41,14 @@ class _HomePageState extends State<HomePage> {
               ),
               TextField(
                 decoration: InputDecoration(
+                    prefixIcon: Padding(
+                      padding: const EdgeInsets.all(14.0),
+                      child: Container(
+                        height: 16,
+                        width: 16,
+                        child: Image.asset('assets/images/Search.png'),
+                      ),
+                    ),
                     contentPadding: EdgeInsets.symmetric(horizontal: 12),
                     border: OutlineInputBorder(
                       borderRadius: const BorderRadius.all(
