@@ -35,10 +35,12 @@ class _HomePageState extends State<HomePage> {
                   )
                 ],
               ),
+              SizedBox(height: 16),
               Text(
                 'Busque um pet',
-                style: TextStyle(fontSize: 24),
+                style: TextStyle(fontSize: 20),
               ),
+              SizedBox(height: 8),
               TextField(
                 decoration: InputDecoration(
                     prefixIcon: Padding(
