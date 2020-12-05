@@ -62,6 +62,29 @@ class _HomePageState extends State<HomePage> {
                     hintText: "Procurar",
                     filled: true,
                     fillColor: CustomColors.wildSand),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 20),
+                height: 80,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      width: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Colors.red,
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [Text('Cachorro')],
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 12),
+                  ],
+                ),
               )
             ],
           ),
