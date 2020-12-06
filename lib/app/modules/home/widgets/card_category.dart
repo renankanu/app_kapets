@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CardCategory extends StatelessWidget {
+  final bool isSelected;
+  final String title;
+  final String icon;
+
+  const CardCategory({Key key, this.isSelected, this.title, this.icon})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,7 +18,7 @@ class CardCategory extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          children: [Text('Cachorro')],
+          children: [Text(title)],
         ),
       ),
     );

@@ -70,7 +70,9 @@ class _HomePageState extends State<HomePage> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    CardCategory(),
+                    CardCategory(
+                      title: 'Cachorro',
+                    ),
                     SizedBox(width: 12),
                   ],
                 ),
