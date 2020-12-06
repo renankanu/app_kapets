@@ -71,7 +71,15 @@ class _HomePageState extends State<HomePage> {
                   scrollDirection: Axis.horizontal,
                   children: [
                     CardCategory(
+                      icon: 'assets/icons/dog.svg',
                       title: 'Cachorro',
+                      isSelected: true,
+                    ),
+                    SizedBox(width: 12),
+                    CardCategory(
+                      icon: 'assets/icons/cat.svg',
+                      title: 'Gato',
+                      isSelected: false,
                     ),
                     SizedBox(width: 12),
                   ],
