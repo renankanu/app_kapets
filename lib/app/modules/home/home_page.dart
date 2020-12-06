@@ -1,3 +1,4 @@
+import 'package:app_kapets/app/modules/home/widgets/card_category.dart';
 import 'package:app_kapets/utils/custom_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -69,19 +70,7 @@ class _HomePageState extends State<HomePage> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Container(
-                      width: 80,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        color: Colors.red,
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [Text('Cachorro')],
-                        ),
-                      ),
-                    ),
+                    CardCategory(),
                     SizedBox(width: 12),
                   ],
                 ),
